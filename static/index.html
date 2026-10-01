@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <main class="shell">
+      <section class="calculator" aria-label="Calculadora">
+        <header class="brand">
+          <span class="brand-mark" aria-hidden="true"></span>
+          <h1>Calculadora</h1>
+        </header>
+        <div class="screen" aria-live="polite">
+          <p id="expression" class="expression">0</p>
+          <p id="result" class="result">0</p>
+        </div>
+        <div class="keys" role="group" aria-label="Teclas">
+          <button type="button" class="key key-muted" data-action="clear">C</button>
+          <button type="button" class="key key-muted" data-action="sign">+/−</button>
+          <button type="button" class="key key-muted" data-action="backspace" aria-label="Borrar">⌫</button>
+          <button type="button" class="key key-op" data-op="/">÷</button>
+
+          <button type="button" class="key" data-digit="7">7</button>
+          <button type="button" class="key" data-digit="8">8</button>
+          <button type="button" class="key" data-digit="9">9</button>
+          <button type="button" class="key key-op" data-op="*">×</button>
+
+          <button type="button" class="key" data-digit="4">4</button>
+          <button type="button" class="key" data-digit="5">5</button>
+          <button type="button" class="key" data-digit="6">6</button>
+          <button type="button" class="key key-op" data-op="-">−</button>
+
+          <button type="button" class="key" data-digit="1">1</button>
+          <button type="button" class="key" data-digit="2">2</button>
+          <button type="button" class="key" data-digit="3">3</button>
+          <button type="button" class="key key-op" data-op="+">+</button>
+
+          <button type="button" class="key key-zero" data-digit="0">0</button>
+          <button type="button" class="key" data-action="decimal">.</button>
+          <button type="button" class="key key-equals" data-action="equals">=</button>
+        </div>
+      </section>
+    </main>
+    <script src="/app.js"></script>
+  </body>
+</html>
